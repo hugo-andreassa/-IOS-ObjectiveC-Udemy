@@ -7,7 +7,10 @@
 
 #import "ViewController.h"
 
+
 @interface ViewController ()
+
+@property (nonatomic, strong) NSString *name;
 
 @end
 
@@ -16,6 +19,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    self.name = @"Hugo";
+    NSLog(@"Name: %@", self.name);
+
+    _name = @"José";
+    NSLog(@"Name: %@", _name);
+    
+    [self setName: @"Jon"];
+    NSLog(@"Name: %@", [self name]);
+
 }
 
 
