@@ -6,6 +6,7 @@
 //
 
 #import "ViewController.h"
+#import "Person.h"
 
 @interface ViewController ()
 
@@ -49,6 +50,14 @@
     if ([self canPurchase: self.itemAmount]) {
         NSLog(@"We can buy");
     }
+    
+    Person *person = [[Person alloc] init];
+    [person speakName];
+    [Person stateSpecies];
+
+    UIImage *image = [UIImage imageWithData:
+                      [NSData dataWithContentsOfURL:
+                       [NSURL URLWithString: @"http://google.com.br"]]];
     
 }
 
