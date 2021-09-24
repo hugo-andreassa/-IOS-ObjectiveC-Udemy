@@ -16,6 +16,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+
+    NSArray *arr = [NSArray arrayWithObjects: @"Yay1", nil];
+    NSString *str = @"Yaya";
+    
+    printf(@"");
 }
 
 
